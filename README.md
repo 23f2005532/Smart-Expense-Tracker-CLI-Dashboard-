@@ -12,7 +12,7 @@ This project started as part of my journey in the IITM BS in Data Science and Ap
 This app is a combination of:
 - 🧾 **Web App** – for everyday users to log and visualize their expenses  
 - ⚙️ **CLI Tool** – for admin tasks like data cleanup, backups, and generating reports  
-- 🧠 **Smart Analytics (Optional)** – for trend detection and auto-categorization using Machine Learning
+- 🧠 **Smart Analytics** – for trend detection and auto-categorization using Machine Learning
 
 Everything runs on a **common database**, so actions from the web or CLI stay in sync.
 
@@ -34,7 +34,7 @@ Everything runs on a **common database**, so actions from the web or CLI stay in
 - Train ML model for auto-tagging expenses (optional)  
 - Perform admin operations securely  
 
-### 🧠 Smart Insights (Coming Soon)
+### 🧠 Smart Insights 
 - Expense categorization based on note text using NLP  
 - Monthly trend prediction and spending alerts  
 
@@ -44,12 +44,12 @@ Everything runs on a **common database**, so actions from the web or CLI stay in
 
 | Layer | Technologies |
 |--------|---------------|
-| **Frontend** | HTML, CSS, Bootstrap, Chart.js |
-| **Backend API** | Flask (or FastAPI), REST API |
-| **Database** | SQLite (or PostgreSQL) + SQLAlchemy ORM |
+| **Frontend** | Vue.js, HTML, CSS, Bootstrap, Chart.js |
+| **Backend API** | Flask, REST API |
+| **Database** | SQLite + SQLAlchemy ORM |
 | **CLI** | Typer (Python) |
 | **Data / ML** | Pandas, Scikit-learn |
-| **Deployment** | Docker, Render / Railway |
+| **Deployment** | Docker,  Railway |
 
 ---
 
@@ -102,7 +102,6 @@ This project helps me:
 - Build **clean CLI tools** for backend/admin workflows  
 - Understand **data visualization** and interactive dashboards  
 - Experiment with **basic ML features** like text classification  
-- Prepare for **Software Engineer / ML Engineer** roles  
 
 ---
 
@@ -118,12 +117,12 @@ This project helps me:
 
 ```bash
 # 1️⃣ Clone the repository
-git clone https://github.com/<your-username>/smart-expense-tracker.git
-cd smart-expense-tracker
+git clone https://github.com/23f2005532/Smart-Expense-Tracker-CLI-Dashboard-.git
+cd Smart-Expense-Tracker-CLI-Dashboard-
 
 # 2️⃣ Setup environment
 python -m venv venv
-source venv/bin/activate    # or venv\Scripts\activate on Windows
+venv\Scripts\activate 
 pip install -r requirements.txt
 
 # 3️⃣ Run the backend
