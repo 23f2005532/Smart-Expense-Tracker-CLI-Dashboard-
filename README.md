@@ -44,7 +44,7 @@ Everything runs on a **common database**, so actions from the web or CLI stay in
 
 | Layer | Technologies |
 |--------|---------------|
-| **Frontend** | Vue.js, HTML, CSS, Bootstrap, Chart.js |
+| **Frontend** | Vue.js, HTML, CSS, JS, Chart.js |
 | **Backend API** | Flask, REST API |
 | **Database** | SQLite + SQLAlchemy ORM |
 | **CLI** | Typer (Python) |
