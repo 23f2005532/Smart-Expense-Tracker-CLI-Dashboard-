@@ -156,10 +156,10 @@ python cli.py --help
 
 ---
 
-## 🌟 About Me
-
-Hi! I’m **Ehtesham Ansari**, an IITM BS Data Science and Applications student passionate about building full-stack, data-driven applications.  
-This project is part of my personal roadmap toward becoming a **Machine Learning Engineer + Backend Developer**.
+## 👨‍💻 Author
+**Ehtesham Ansari**  
+B.S. in Data Science and Applications, IIT Madras  
+*Exploring Data Engineering, Automation, and MLOps*
 
 If you like this project, feel free to ⭐ it or drop suggestions!
 
