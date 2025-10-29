@@ -1,6 +1,9 @@
 # application/api/__init__.py
-from application.api.general_api import *
-from application.api.auth_api import *
+from .general_api import *
+from .auth.auth_api import *
+from .user.user_api import *
+from .transaction.transaction_api import *
+
 
 def register_routes(api):
     """
@@ -19,3 +22,13 @@ def register_routes(api):
     api.add_resource(PasswordResetRequest, "/api/password-reset/request")
     api.add_resource(PasswordResetConfirm, "/api/password-reset/confirm")
     api.add_resource(AdminOnly, "/api/admin-only")
+
+    #User
+    api.add_resource(UserProfile, "/api/user/profile")
+    api.add_resource(UserPasswordChange, "/api/user/change-password")
+    api.add_resource(UserList, "/api/users")
+    api.add_resource(UserDetail, "/api/users/<int:user_id>")
+
+    # Transactions
+    api.add_resource(TransactionListAPI, "/api/transactions")
+    api.add_resource(TransactionDetailAPI, "/api/transactions/<int:txn_id>")

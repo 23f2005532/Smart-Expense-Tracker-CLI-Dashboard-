@@ -39,7 +39,7 @@ def create_app():
     register_routes(api)
 
     # Set up CORS
-    CORS(app, supports_credentials=True, origins=LDC.ORIGINS)
+    CORS(app, supports_credentials=True, origins=["http://localhost:5173"])
 
     # Secret key (use env var if available)
     app.secret_key = os.getenv("SECRET_KEY", os.urandom(50))

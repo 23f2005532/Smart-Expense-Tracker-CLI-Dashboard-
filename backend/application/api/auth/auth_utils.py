@@ -5,7 +5,7 @@ import jwt
 import datetime
 from functools import wraps
 from flask import request, jsonify, current_app
-from application.models import User, TokenBlocklist
+from ...models.models import User, TokenBlocklist
 from application.database import db
 
 # configuration

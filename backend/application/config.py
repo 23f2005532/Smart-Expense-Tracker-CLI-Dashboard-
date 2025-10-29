@@ -40,7 +40,7 @@ class Config:
     FRONT_END_BASE = os.getenv("FRONTEND_BASE","")
 
     # FRONTEND ALLOWED ORIGINS FOR CORS(BACKEND)
-    ORIGINS = os.getenv("FRONTEND_BASE","")
+    ORIGINS = os.getenv("FRONTEND_BASE","http://localhost:5173/")
 
 
 class LocalDevelopmentConfig(Config):

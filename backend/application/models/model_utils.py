@@ -6,7 +6,7 @@ Shared between APIs and CLI scripts.
 from datetime import datetime
 from sqlalchemy.exc import SQLAlchemyError
 from application.database import db
-from application.models import User, Transaction, Category
+from backend.application.models.models import User, Transaction, Category
 
 
 # --------------------------- User Helpers ---------------------------

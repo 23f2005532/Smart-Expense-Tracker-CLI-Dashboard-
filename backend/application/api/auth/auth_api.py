@@ -2,7 +2,7 @@
 
 from flask import request, jsonify
 from flask_restful import Resource
-from application.models import User
+from ...models.models import User
 from application.database import db
 import jwt
 import datetime
@@ -17,9 +17,9 @@ SECRET_KEY = os.getenv("SECRET_KEY", "dev_secret_key")
 from flask_restful import Resource
 from flask import request, jsonify, current_app
 from werkzeug.security import generate_password_hash, check_password_hash
-from application.models import User, PasswordResetToken, TokenBlocklist
+from ...models.models import User, PasswordResetToken, TokenBlocklist
 from application.database import db
-from application.api.auth_utils import (
+from .auth_utils import (
     create_access_token,
     create_refresh_token,
     decode_token,
